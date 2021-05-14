@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zicco</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/24acfeb795.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="container">
+        <div class="row">
+            <!-- Logo insert -->
+            <div class="d-none d-lg-block col-lg-3">
+                <img src="img/logo.png" alt="logo" title="Zicco" class="img-fluid my-3">
+            </div>
+            <!-- Logo End -->
+            <!-- Start Searchbox -->
+            <div class="d-none d-lg-flex col-lg-6 align-items-center">
+                <div class="input-group custom-edit">
+                    <input type="search" placeholder="عبارت مورد نظر را وارد کنید ..." id="searchbox" class="form-control rounded-pill">
+                    <div class="input-group-append custom-edit">
+                        <button class="btn btn-primary rounded-pill">بگرد</button>
+                    </div>
+                </div>
+                <!-- End searchbox -->
+            </div>
+            <!-- Start User & Shopping -->
+            <div class="d-none d-lg-flex col-lg-3 align-items-center justify-content-center custom-hover">
+                <a href="#" class="border-left pl-3 ml-3"><i class="fa fa-external-link align-middle pl-1"></i>ورود</a>
+                <a href="#" class="border-left pl-3 ml-3"><i class="fa fa-user align-middle pl-1"></i>ثبت نام</a>
+                <a href="#" class="pl-3"><i class="fa fa-shopping-cart align-middle"></i></a>
+            </div>
+            <!-- End User & Shopping -->
+            <!-- End Header -->
+            <!-- Start Mobile Version -->
+            <div class="col-12 mt-3 d-lg-none d-flex justify-content-center">
+                <a href="#" class="ml-3"><i class="fa fa-external-link align-middle"></i></a>
+                <a href="#" class="ml-3"><i class="fa fa-user align-middle"></i></a>
+                <a href="#" class="ml-3"><i class="fa fa-shopping-cart align-middle"></i></a>
+                <a href="#search-c" data-toggle="collapse" class="ml-3"><i class="fa fa-search align-middle"></i></a>
+            </div>
+            <!-- Start Mobile Version -->
+        </div>
+        <!-- Start Search Collapse -->
+        <div class="row mt-2">
+           <div class="col-12 d-lg-none">
+               <div class="collapse" id="search-c">
+                   <div class="input-group custom-edit">
+                       <input type="search" class="rounded-pill form-control" placeholder="عبارت مورد نظر را وارد کنید ...">
+                       <div class="input-group-append custom-edit">
+                           <button class="btn btn-primary rounded-pill">جستجو</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <!-- End Search Collapse -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'IranY';
+    src: url('../font/BRoya.eot');
+    src: url('../font/BRoya.ttf');
+    
+  }
+
+*{
+    font-family: 'IranY';
+    text-decoration: none !important;
+}
+
+.input-group.custom-edit input
+{
+    font-size: 16px;
+    box-shadow: none !important;
+}
+
+.input-group.custom-edit button
+{
+    font-size: 16px;
+    box-shadow: none !important;
+}
+.custom-hover a{
+    color: darkgray !important;
+    font-size: 16px !important;
+    transition: all .3s ease !important;
+}
+
+.custom-hover a:hover{
+    color:darkgreen !important;
+    
+}
