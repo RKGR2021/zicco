@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/24acfeb795.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Header -->
     <div class="container">
+        <!-- Start Grid -->
         <div class="row">
             <!-- Logo insert -->
             <div class="d-none d-lg-block col-lg-3">
@@ -27,7 +30,8 @@
             <!-- Start Searchbox -->
             <div class="d-none d-lg-flex col-lg-6 align-items-center">
                 <div class="input-group custom-edit">
-                    <input type="search" placeholder="عبارت مورد نظر را وارد کنید ..." id="searchbox" class="form-control rounded-pill">
+                    <input type="search" placeholder="عبارت مورد نظر را وارد کنید ..." id="searchbox"
+                        class="form-control rounded-pill">
                     <div class="input-group-append custom-edit">
                         <button class="btn btn-primary rounded-pill">بگرد</button>
                     </div>
@@ -38,7 +42,8 @@
             <div class="d-none d-lg-flex col-lg-3 align-items-center justify-content-center custom-hover">
                 <a href="#" class="border-left pl-3 ml-3"><i class="fa fa-external-link align-middle pl-1"></i>ورود</a>
                 <a href="#" class="border-left pl-3 ml-3"><i class="fa fa-user align-middle pl-1"></i>ثبت نام</a>
-                <a href="#" class="pl-3"><i class="fa fa-shopping-cart align-middle"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart align-middle" data-toggle="tooltip" data-placement="top"
+                        title="سبد خرید"></i></a>
             </div>
             <!-- End User & Shopping -->
             <!-- End Header -->
@@ -53,18 +58,85 @@
         </div>
         <!-- Start Search Collapse -->
         <div class="row mt-2">
-           <div class="col-12 d-lg-none">
-               <div class="collapse" id="search-c">
-                   <div class="input-group custom-edit">
-                       <input type="search" class="rounded-pill form-control" placeholder="عبارت مورد نظر را وارد کنید ...">
-                       <div class="input-group-append custom-edit">
-                           <button class="btn btn-primary rounded-pill">جستجو</button>
-                       </div>
-                   </div>
-               </div>
-           </div>
+            <div class="col-12 d-lg-none">
+                <div class="collapse" id="search-c">
+                    <div class="input-group custom-edit">
+                        <input type="search" class="rounded-pill form-control"
+                            placeholder="عبارت مورد نظر را وارد کنید ...">
+                        <div class="input-group-append custom-edit">
+                            <button class="btn btn-primary rounded-pill">جستجو</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End Search Collapse -->
     </div>
+    <!-- Start Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-color mt-2">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="navbar-nav text-center custom-navbar-nav">
+                    <li class="nav-item custom-nav-item">
+                        <a href="#" class="nav-link">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item dropdown custom-nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">دوره های متخصص</a>
+                        <ul class="dropdown-menu dropdown-menu-right text-right custom-dropdownmenu">
+                            <a href="#" class="dropdown-item border-bottom py-2">متخصص اندروید</a>
+                            <a href="#" class="dropdown-item border-bottom py-2">متخصص php</a>
+                            <a href="#" class="dropdown-item border-bottom py-2">متخصص طراحی</a>
+                            <a href="#" class="dropdown-item border-bottom py-2">متخصص بوت استرپ</a>
+                            <a href="#" class="dropdown-item border-bottom py-2">متخصص جاوا</a>
+                            <a href="#" class="dropdown-item border-bottom non-border py-2">متخصص کاتلین</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown custom-nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">گرافیک</a>
+                        <ul class="dropdown-menu dropdown-menu-right text-right custom-dropdownmenu">
+                            <a href="#" class="dropdown-item border-bottom py-2">آموزش فتوشاپ</a>
+                            <a href="#" class="dropdown-item border-bottom py-2">آموزش Illustrator</a>
+                            <a href="#" class="dropdown-item border-bottom py-2">آموزش inDesign</a>
+                            <a href="#" class="dropdown-item border-bottom py-2">آموزش Corel Draw</a>
+                            <a href="#" class="dropdown-item border-bottom non-border py-2">آموزش افترافکت</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown custom-nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">افیس</a>
+                        <ul class="dropdown-menu dropdown-menu-right text-right custom-dropdownmenu">
+                            <a href="#" class="dropdown-item border-bottom non-border py-2">آموزش اکسل</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a href="#" class="nav-link">سی پلاس پلاس</a>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a href="#" class="nav-link">لینوکس</a>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a href="#" class="nav-link">کانفیگ سرورهای لینوکسی</a>
+                    </li>
+                    <li class="nav-item dropdown custom-nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">مهندسی</a>
+                        <ul class="dropdown-menu dropdown-menu-right text-right custom-dropdownmenu">
+                            <a href="#" class="dropdown-item border-bottom py-2">آموزش اتوکد 2019</a>
+                            <a href="#" class="dropdown-item border-bottom non-border py-2">آموزش متلب </a>
+                        </ul>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a href="#" class="nav-link">تماس با ما</a>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a href="#" class="nav-link">تحلیل بورسی</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation Menu -->
 </body>
+
 </html>
