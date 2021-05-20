@@ -85,10 +85,30 @@
         opacity: 1 !important;
         visibility: visible !important;
         display: block !important;
-        top:60px !important
+        top:58px !important
     }
 }
 
 .non-border{
     border-bottom: 0 !important;
+}
+
+.modal-body .sizing{
+    font-size: medium !important;
+}
+.modal-body .sizing2{
+    font-size: 14px !important;
+}
+
+.custom-containerfluid{
+    background-image: url(../img/background1.jpg);
+    width: 100% !important;
+    height: 260px !important;
+    position: relative !important;
+    background-blend-mode: overlay !important;
+}
+
+.title{
+    color: #ffe9e9 !important;
+    background: #d80f34 !important;
 }
