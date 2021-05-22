@@ -7,8 +7,15 @@
     
   }
 
+  @font-face {
+    font-family: 'IranYekan';
+    src: url('../font/iranyekan.eot');
+    src: url('../font/iranyekan.woff');
+    
+  }
+
 *{
-    font-family: 'IranY';
+    font-family: 'IranYekan';
     text-decoration: none !important;
 }
 
@@ -141,6 +148,7 @@
     position: relative !important;
     display: flex !important;
     flex-direction: column !important;
+    overflow: hidden !important;
 }
 
 .custom-card .overlay{
@@ -154,6 +162,7 @@
     visibility: hidden;
     border-radius: 2px;
     transition: all 0.2s ease-out !important;
+    
 }
 
 .custom-card:hover .overlay{
@@ -163,9 +172,9 @@
 
 .custom-card .overlay .btn{
     position: absolute;
-    top: 70%;
+    top: 110%;
     right: 50%;
-    transform: translate(50%,-50%) scale(0);
+    transform: translate(50%,-50%) ;
     border-radius: 35px;
     transition: all 0.2s ease-out;
     font-size: 14px;
@@ -174,9 +183,9 @@
 
 .custom-card .overlay .badge{
     position: absolute;
-    top: 35%;
+    top: -60%;
     right: 50%;
-    transform: translate(50%,-50%) scale(0);
+    transform: translate(50%,-50%) ;
     border-radius: 35px;
     transition: all 0.2s ease-out 0.1s;
     font-size: 13px;
@@ -185,11 +194,44 @@
 }
 
 .custom-card:hover .overlay .btn{
-    transform: translate(50%,-50%) scale(1);
+    transform: translate(50%,-50%);
+    top: 70%;
 }
 
 .custom-card:hover .overlay .badge{
     
-    transform: translate(50%,-50%) scale(1);
-   
+    transform: translate(50%,-50%) ;
+    top: 35%;  
+}
+
+.custom-cardbody a{
+    color: #000 !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+
+}
+
+.custom-cardbody a:hover{
+    color: coral !important;
+}
+
+.card-footer small.badge{
+    font-weight: lighter !important;
+}
+.card-footer div del{
+    text-decoration: line-through !important;
+    font-size: x-small !important;
+}
+.card-footer small.text-success {
+    font-size: 15px !important;
+}
+
+.custom-cardbody small.bolding{
+    font-size: 14px !important;
+    font-weight:normal !important;
+}
+
+.custom-cardbody .bolding2{
+    font-size: 13px !important;
+    font-weight:lighter !important;
 }
