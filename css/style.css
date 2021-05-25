@@ -117,6 +117,7 @@
 
     .custom-navbar-nav li a{
         font-size: 12.5px !important;
+        font-weight: 500 !important;
     }
 
     .navbar{
@@ -271,4 +272,9 @@
 .custom-cardbody .bolding2{
     font-size: 13px !important;
     font-weight:lighter !important;
+}
+
+.custom-container-fluid {
+    background-color: rgb(49, 49, 49) !important;
+    
 }
