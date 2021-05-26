@@ -278,3 +278,30 @@
     background-color: rgb(49, 49, 49) !important;
     
 }
+
+.custom-ul li{
+    color: #039be5 !important;
+}
+.custom-small {
+    color: #039be5 !important;
+    border-bottom: 1px solid #039be5 !important;
+}
+
+.custom-ul li a{
+    font-size: 13px !important;
+    color: #000 !important;
+    transition: all 0.4s ease !important;
+}
+
+.custom-ul li a:hover{
+    color: #039be5 !important;
+}
+
+.awesome a{
+    padding-right: 10px !important;
+}
+
+.top-link{
+    font-size: 35px !important;
+    margin-left: 2px !important;
+}
