@@ -346,3 +346,113 @@ div span.badge{
 .custom-ul li div p{
     font-size: small !important;
 }
+
+.custom-border-ul::before{
+    content: "";
+    width: 3px;
+    height: 173%;
+    display: block;
+    position: absolute;
+    background-color: #ccc;
+    right: 22px;
+    top: -20px;
+}
+
+.custom-li-hover i{
+    font-size: xx-large !important;
+    color: #5a9b99 !important;
+    transition: all .4s ease !important;
+    z-index: 99 !important;
+}
+
+.custom-li-hover:hover i{
+    color: #f54748 !important;
+}
+
+@media(max-width:991px){
+    .custom-border-ul::before{
+        content: "";
+        width: 3px;
+        height: 155%;
+        display: block;
+        position: absolute;
+        background-color: #ccc;
+        right: 22px;
+        top: -20px;
+    }
+}
+@media(max-width:411px){
+    .custom-border-ul::before{
+        content: "";
+        width: 3px;
+        height: 145%;
+        display: block;
+        position: absolute;
+        background-color: #ccc;
+        right: 22px;
+        top: -20px;
+    }
+}
+
+#comments li{
+    color: #039be5 !important;
+}
+
+#comments li small{
+    color: #000 !important;
+}
+
+.resize{
+    resize: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
