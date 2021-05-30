@@ -333,3 +333,16 @@ div span.badge{
     color: #039be5 !important;
     opacity: 1 !important;
 }
+.nav-item-color{
+    color: #8e8e8e !important;
+    font-size: small !important;
+}
+
+.custom-ul li div{
+    background-color: #f1e9e9 !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    color: #000 !important;
+}
+.custom-ul li div p{
+    font-size: small !important;
+}
