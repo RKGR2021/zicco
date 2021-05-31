@@ -405,8 +405,33 @@ div span.badge{
 .resize{
     resize: none !important;
 }
+.custom-label label{
+    font-size: smaller !important;
+}
+.custom-label input::placeholder{
+    font-size: smaller !important;
+}
+.custom-label i{
+    font-size: x-small !important;
+}
+.form-group textarea::placeholder{
+    font-size: small !important;
+}
+.custom-label label::after{
+    content: "*" !important;
+    color: #d80f34 !important;
+}
 
-
+.qa {
+    transition: all 0.3 ease;
+}
+.qa a{
+    font-size: 10px;
+    color: #8e8e8e;
+}
+.qa:hover{
+    background-color: #eaeaea !important;
+}
 
 
 
