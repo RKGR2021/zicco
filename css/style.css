@@ -433,7 +433,43 @@ div span.badge{
     background-color: #eaeaea !important;
 }
 
-
+.rating{
+    position: relative !important;
+    top: 3px;
+    right: 40px;
+}
+.rating input{
+    display: none !important;
+}
+.rating label{
+    display: block !important;
+    cursor: pointer !important;
+    width: 22px;
+}
+.rating label::before{
+    content: '\f005' !important;
+    font-family: FontAwesome!important;
+    position: relative !important;
+    display: block !important;
+    font-size: 20px !important;
+    color: #8e8e8e !important;
+}
+.rating label::after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute !important;
+    display: block !important;
+    font-size: 20px !important;
+    color: gold !important;
+    top: 0;
+    opacity: 0;
+    transition:all 0.2s ease;
+}
+.rating label:hover::after, 
+.rating label:hover~label::after, 
+.rating input:checked~label::after{
+    opacity: 1;
+}
 
 
 
