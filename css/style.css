@@ -466,10 +466,10 @@ div span.badge{
     opacity: 0;
     transition:all 0.2s ease;
 }
-.rating input:checked~label::after  , 
+.rating label:hover::after ,
 .rating label:hover~label::after, 
-.rating label:hover::after
-{
+.rating input:checked~label::after {
+
     opacity: 1;
 }
 
@@ -479,10 +479,10 @@ div span.badge{
 }
 
 .rating input.star1:checked ~ label::after , 
-.rating input.star2:checked ~ label::after  {
-    color: rgb(248, 121, 1) !important;
-    
-    
+.rating input.star2:checked ~ label::after ,
+.rating label.star1:hover::after, 
+.rating label.star2:hover::after  {
+    color: rgb(248, 121, 1) !important;  
 }
 
 
