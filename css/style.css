@@ -437,6 +437,7 @@ div span.badge{
     position: relative !important;
     top: 3px;
     right: 40px;
+    /* transform: rotateY(180deg) !important; */
 }
 .rating input{
     display: none !important;
@@ -465,10 +466,23 @@ div span.badge{
     opacity: 0;
     transition:all 0.2s ease;
 }
-.rating label:hover::after, 
+.rating input:checked~label::after  , 
 .rating label:hover~label::after, 
-.rating input:checked~label::after{
+.rating label:hover::after
+{
     opacity: 1;
+}
+
+.rating input.star5:checked ~ label::after{
+    
+    text-shadow: 0 0 20px darkgoldenrod !important;
+}
+
+.rating input.star1:checked ~ label::after , 
+.rating input.star2:checked ~ label::after  {
+    color: rgb(248, 121, 1) !important;
+    
+    
 }
 
 
