@@ -537,7 +537,37 @@ img.main2{
     width: 250px !important;
     height: 155px !important;
 }
-
+.heightone{
+    height: 94vh !important;
+}
+.right-side{
+    background-color: #7f53ac !important;
+    background-image: linear-gradient(315deg, #6959d1, #7564e0) !important;
+    border-top-right-radius: 35px !important;
+    border-bottom-right-radius: 35px !important;
+    overflow: hidden !important;
+}
+.right-side button{
+    color: #fff !important;
+    font-size: 30px !important;
+}
+.list-group li{
+    background:none !important;
+    cursor: pointer !important;
+    transition: all 0.4s ease !important;
+}
+.list-group li a{
+    color: #fff !important;
+}
+.list-group li:hover{
+    background: #fff !important;
+}
+.list-group li:hover a{
+    color: #039be5 !important;
+}
+.border1{
+    border-radius: 35px 0 0 35px !important;
+}
 
 
 
