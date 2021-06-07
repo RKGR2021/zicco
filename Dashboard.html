@@ -8,7 +8,8 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style_dashboard.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -81,18 +82,616 @@
             </div>
             <!-- End Sidebar -->
             <!-- Start Main side -->
+            <!-- Start Header -->
             <div class="col-12 col-lg-10 mt-3">
                 <div class="card shadow border-0 left-side">
-                    <div class="card-body d-lg-flex justify-content-between align-items-center text-center py-3">
+                    <div class="card-body d-sm-flex justify-content-between align-items-center text-center py-3">
                         <div>
                             <div class="card border-0 bg-light border1">
-                                <div class="card-body py-3 d-flex justify-content-between info">
+                                <div class="card-body py-3 d-sm-flex info">
                                     <p class="mb-0 border-left pl-3">
                                         <i class="fas fa-angle-left align-middle text-muted pl-1"></i> روز جاری : ریال
                                     </p>
                                     <p class="mb-0 mx-3">
                                         <i class="fas fa-angle-left align-middle text-muted pl-2"></i>ماه جاری : ریال
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown text-dark" data-toggle="dropdown">
+                                <span><i class="fas fa-bars align-middle"></i></span>
+                            </a>
+                            <div class="dropdown-menu border-0 shadow text-right dropdown-profile">
+                                <a href="#" class="dropdown-item"><i class="fas fa-edit align-middle"></i>ویرایش
+                                    اطلاعات</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-key align-middle"></i>تغییر رمز</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-door-open align-middle"></i>خروج</a>
+                            </div>
+                            <img src="img/businessman.png" alt="profile" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                </div>
+                <!-- End Header -->
+                <!-- Start Alert Section -->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active mb-3" id="home">
+                        <div class="alert my-3 custom-alert">
+                            <p class="mb-0">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                            </p>
+                        </div>
+                        <!-- End Alert Section -->
+                        <!-- Start Table Chart -->
+                        <div class="card border-0 shadow chart">
+                            <div class="card-header text-center bg-transparent border-0 mb-3">
+                                <h5>فروش ماه های اخیر</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul
+                                    class="nav flex-column flex-lg-row text-center justify-content-around last-sale-btn">
+                                    <li class="nav-item">
+                                        <a href="#far" data-toggle="tab"
+                                            class="btn px-2 py-2 my-md-2 active">فروردین</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#ord" data-toggle="tab" class="btn px-2 py-2 my-md-2">اردیبهشت</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#khor" data-toggle="tab" class="btn px-2 py-2 my-md-2">خرداد</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#tir" data-toggle="tab" class="btn px-2 py-2 my-md-2">تیر</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#mrd" data-toggle="tab" class="btn px-2 py-2 my-md-2">مرداد</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#shr" data-toggle="tab" class="btn px-2 py-2 my-md-2">شهریور</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#mhr" data-toggle="tab" class="btn px-2 py-2 my-md-2">مهر</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#abn" data-toggle="tab" class="btn px-2 py-2 my-md-2">آبان</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#azr" data-toggle="tab" class="btn px-2 py-2 my-md-2">آذر</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#dey" data-toggle="tab" class="btn px-2 py-2 my-md-2">دی</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#bhmn" data-toggle="tab" class="btn px-2 py-2 my-md-2">بهمن</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#esf" data-toggle="tab" class="btn px-2 py-2 my-md-2">اسفند</a>
+                                    </li>
+                                </ul>
+                                <div class="card border-0 mt-3">
+                                    <div class="card-body">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="far">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>6.8 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="ord">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="khor">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="tir">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="mrd">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="shr">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="mhr">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="abn">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="azr">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="dey">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="bhmn">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show" id="esf">
+                                                <table
+                                                    class="table table-borderless border-0 text-center table-responsive-md table-track">
+                                                    <thead class="bg-light heading2">
+                                                        <tr>
+                                                            <th>ردیف</th>
+                                                            <th>مبلغ (تومان)</th>
+                                                            <th>نمره</th>
+                                                            <th>وضعیت تسویه</th>
+                                                            <th>بهترین این ماه</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>200,000</td>
+                                                            <td>7.2 از 10</td>
+                                                            <td class="text-success"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه شده</td>
+                                                            <td><img src="img/medal (1).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>350,000</td>
+                                                            <td>7.0 از 10</td>
+                                                            <td class="text-danger"><i
+                                                                    class="fa fa-check pl-1"></i>تسویه نشده</td>
+                                                            <td><img src="img/medal (3).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>700,000</td>
+                                                            <td>8.0 از 10</td>
+                                                            <td class="text-warning"><i class="fa fa-check pl-1"></i>در
+                                                                حال عملیات</td>
+                                                            <td><img src="img/medal (2).png" alt=""
+                                                                    class="img-fluid d-block mx-auto"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- End Table Chart -->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

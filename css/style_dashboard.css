@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'IranY';
+    src: url('../font/BRoya.eot');
+    src: url('../font/BRoya.ttf');
+    
+  }
+
+  @font-face {
+    font-family: 'IranYekan';
+    src: url('../font/iranyekan.eot');
+    src: url('../font/iranyekan.woff');
+    
+  }
+
+*{
+    font-family: 'IranYekan';
+    text-decoration: none !important;
+}
+
+.heightone{
+    height: 94vh !important;
+}
+.right-side{
+    background-color: #7f53ac !important;
+    background-image: linear-gradient(315deg, #6959d1, #7564e0) !important;
+    border-top-right-radius: 35px !important;
+    border-bottom-right-radius: 35px !important;
+    overflow: hidden !important;
+}
+.right-side button{
+    color: #fff !important;
+    font-size: 30px !important;
+}
+.list-group li{
+    background:none !important;
+    cursor: pointer !important;
+    transition: all 0.4s ease !important;
+}
+.list-group li a{
+    color: #fff !important;
+}
+.list-group li:hover{
+    background: #fff !important;
+}
+.list-group li:hover a{
+    color: #039be5 !important;
+}
+.border1{
+    border-radius: 35px 0 0 35px !important;
+}
+.left-side{
+    border-radius: 35px 0 0 35px !important;
+}
+.custom-alert {
+    border-radius: 15px !important;
+    font-size: 16px !important;
+    background: rgba(255, 238, 185, 0.33) !important;
+}
+.custom-alert p{
+    line-height: 2.5 !important;
+}
+.heading2 th{
+    font-weight: lighter !important;
+}
+
+.dropdown-profile a{
+    font-size: 12px !important;
+}
+.dropdown-profile a i{
+    padding-left: 5px !important;
+}
+.chart h5{
+    color: #919191 !important;
+}
+.last-sale-btn a:hover{
+    box-shadow: 0 0.5rem 1rem rgba(111, 66, 193, 0.5) !important;
+    background: #7f53ac !important;
+    color: #fff !important;
+}
+.last-sale-btn a{
+    color: #7564e0 !important;
+    transition: all 0.5s ease !important;
+}
