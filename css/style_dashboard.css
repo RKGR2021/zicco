@@ -83,3 +83,39 @@
     color: #7564e0 !important;
     transition: all 0.5s ease !important;
 }
+.transaction-head h5{
+    color: #919191 !important;
+    font-size: 22px !important;
+}
+.transaction .form-group a:hover{
+    background-color: #d1cdcd !important;
+    box-shadow: 2px 2px 5px #6c6b6e !important;
+}
+.transaction .form-group:first-child a:focus{
+    border:1px solid green !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
+    color: green !important;
+}
+.transaction .form-group:nth-child(2) a:focus{
+    border:1px solid red !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
+    color: red !important;
+}
+.btn-search a{
+    background: #ffee00 !important;
+    background-image: linear-gradient(315deg, #ffcf00 0%,  #ffee00 95%) !important;
+    width: 35% !important;
+    border-radius: 15px 15px 0 0 !important;
+    color: #919191 !important;
+    padding: 12.5px 0 !important;
+    transition: all 0.5s ease;
+}
+.btn-search a:hover{
+    box-shadow:-1px -1px 5px #ffcf00  !important;
+}
+.border1 h5{
+    color: #919191 !important;
+    font-weight: bold !important;
+}
