@@ -13,6 +13,52 @@
     src: url('../font/iranyekan.woff');
     
   }
+  @font-face {
+    font-family: 'IranFamily';
+    src: url('../font/Iran-Family/IRAN.eot');
+    src: url('../font/Iran-Family/IRAN.woff');
+  }
+  @font-face {
+    font-family: 'IranFamilybold';
+    src: url('../font/Iran-Family/IRAN_SemiBold.eot');
+    src: url('../font/Iran-Family/IRAN_SemiBold.woff');
+  }
+  @font-face {
+    font-family: 'IranFamilybolder';
+    src: url('../font/Iran-Family/IRANBold.eot');
+    src: url('../font/Iran-Family/IRANBold.woff');
+  }
+  @font-face {
+    font-family: 'IranYekanFullEB';
+    src: url('../font/IRANYekanWebExtraBlack.eot');
+    src: url('../font/IRANYekanWebExtraBlack.woff');
+  }
+  @font-face {
+    font-family: 'IranYekanEB';
+    src: url('../font/IRANYekanWebBlack.eot');
+    src: url('../font/IRANYekanWebBlack.woff');
+  }
+  @font-face {
+    font-family: 'IranYekanB';
+    src: url('../font/IRANYekanWebExtraBold.eot');
+    src: url('../font/IRANYekanWebExtraBold.woff');
+  }
+  @font-face {
+    font-family: 'IranYekanSB';
+    src: url('../font/IRANYekanWebBold.eot');
+    src: url('../font/IRANYekanWebBold.woff');
+  }
+  @font-face {
+    font-family: 'IranYekanL';
+    src: url('../font/IRANYekanWebLight.eot');
+    src: url('../font/IRANYekanWebLight.woff');
+  }
+  @font-face {
+    font-family: 'IranYekanR';
+    src: url('../font/IRANYekanWebRegular.eot');
+    src: url('../font/IRANYekanWebRegular.woff');
+  }
+
 
 *{
     font-family: 'IranYekan';
@@ -111,11 +157,52 @@
     color: #919191 !important;
     padding: 12.5px 0 !important;
     transition: all 0.5s ease;
+    font-family: 'IranFamilybolder' !important;
 }
 .btn-search a:hover{
     box-shadow:-1px -1px 5px #ffcf00  !important;
 }
 .border1 h5{
     color: #919191 !important;
-    font-weight: bold !important;
+}
+h5.titr{
+    font-family: 'IranFamilybolder' !important;
+}
+.table-edit th{
+    font-family: 'IranFamilybolder' !important;
+}
+.plugin-edit:first-child p{
+    font-family: 'IranFamilybolder' !important;
+}
+.resize{
+    resize: none !important;
+}
+.helper .form-group a{
+    border: 1px solid #6959d1 !important;
+    color: #6959d1 !important;
+}
+.bb a:nth-child(1):hover{
+    color: white !important;
+    border: 1px solid #007bff !important;
+}
+.bb a:nth-child(2):hover{
+    color: white !important;
+    border: 1px solid #ffc107 !important;
+}
+.bb a:nth-child(3):hover{
+    color: white !important;
+    border: 1px solid #dc3545!important;
+}
+.plugin-edit p:nth-child(1){
+    font-family: 'IranYekanSB' !important;
+}
+.plugin-edit p:nth-child(2){
+    font-family: 'IranYekanL' !important;
+}
+.plugin-edit p:nth-child(3){
+    font-family: 'IranYekanR' !important;
+}
+.plugin-edit p:hover  i{
+    transition: all 0.9s ease;
+    color: rgb(207, 1, 1) !important;
 }
