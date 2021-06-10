@@ -129,6 +129,11 @@
     color: #7564e0 !important;
     transition: all 0.5s ease !important;
 }
+.last-sale-btn a:focus{
+    color: #0c940c !important;
+    box-shadow: 0 0 0 .2rem rgba(24, 1, 65, 0.507) !important;
+}
+
 .transaction-head h5{
     color: #919191 !important;
     font-size: 22px !important;
@@ -205,4 +210,29 @@ h5.titr{
 .plugin-edit p:hover  i{
     transition: all 0.9s ease;
     color: rgb(207, 1, 1) !important;
+}
+.card-body p strong{
+    font-family: 'IranYekanSB' !important;
+}
+.custom-switch-edit{
+    padding: 2.2rem !important;
+    direction: ltr !important;
+}
+.custom-switch .custom-control-label::before{
+    width: 2.75rem !important;
+    height: 1.25rem !important;
+}
+.custom-switch .custom-control-label::after{
+    width: 16px !important;
+    height: 16px !important;
+}
+.custom-control-input:checked ~ .custom-control-label::before{
+    background-color: #20c997 !important;
+    border: 1px solid #20c997 !important;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after{
+    transform: translateX(1.5rem) !important;
+}
+.cart-bank select option{
+    font-weight: bold !important;
 }

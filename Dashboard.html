@@ -113,7 +113,7 @@
                 <!-- End Header -->
                 <!-- Start Alert Section -->
                 <div class="tab-content">
-                    <div class="tab-pane fade show active mb-3" id="home">
+                    <div class="tab-pane fade show  mb-3" id="home">
                         <div class="alert my-3 custom-alert">
                             <p class="mb-0">
                                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
@@ -900,7 +900,8 @@
                                         </div>
                                         <div class="form-group">
                                             <label>توضیحات شکایت</label>
-                                            <textarea name="" id="" cols="30" rows="7" class="form-control resize"></textarea>
+                                            <textarea name="" id="" cols="30" rows="7"
+                                                class="form-control resize"></textarea>
                                         </div>
                                         <div class="form-group bb d-flex justify-content-center mt-5">
                                             <a href="#" class="btn btn-outline-primary  px-4">ارسال</a>
@@ -913,10 +914,203 @@
                         </div>
                     </div>
                     <!-- End Support Section -->
+                    <!-- Start Credit Bank Section -->
+                    <div class="tab-pane fade show active mb-3" id="Credit">
+                        <div class="card border-0 shadow mt-3 border1">
+                            <div class="card-header border-0 bg-transparent text-center transaction-head">
+                                <h5 class="titr">ثبت کارت</h5>
+                            </div>
+                            <div class="card-body transaction pb-0">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text bg-transparent px-4">نام بانک</span>
+                                                </div>
+                                                <select class="custom-select">
+                                                    <option value="" selected>انتخاب کنید</option>
+                                                    <option value="">ملی</option>
+                                                    <option value="">پاسارگاد</option>
+                                                    <option value="">پارسیان</option>
+                                                    <option value="">ملت</option>
+                                                    <option value="">صادرات</option>
+                                                    <option value="">رفاه</option>
+                                                    <option value="">سپه</option>
+                                                    <option value="">کشاورزی</option>
+                                                    <option value="">آینده</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text bg-transparent px-4">نام صاحب
+                                                        حساب</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text bg-transparent px-4">شماره کارت</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text bg-transparent px-4">شماره حساب</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text bg-transparent px-4">شماره شبا</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text bg-transparent px-4">سرور درگاه</span>
+                                                </div>
+                                                <select class="custom-select">
+                                                    <option value="" selected>انتخاب کنید</option>
+                                                    <option value="">درگاه آپ</option>
+                                                    <option value="">درگاه زرین پال</option>
+                                                    <option value="">درگاه پارس کارت</option>
+                                                    <option value="">درگاه شتاب</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text bg-transparent px-4">کد دسترسی
+                                                        خصوصی</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="text-center mt-5 btn-search">
+                                    <a href="#" class="btn py-2 shadow-sm border-0">ثبت</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3 border-0 border1 shadow">
+                            <div class="card-header text-center bg-transparent border-0">
+                                <h5>کارت های ثبت شده</h5>
+                            </div>
+                            <div class="card-body pb-0 cart-bank">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-12 col-lg-3 form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text bg-light rounded-pill border-0">
+                                                    <span>نمایش</span>
+                                                </div>
+                                            </div>
+                                            <select class="custom-select bg-light border-0">
+                                                <option value="" selected>کارت غیر فعال</option>
+                                                <option value="">کارت فعال</option>
+                                                <option value="">سایر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-0 bg-light mb-5">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-8">
+                                                <div class="d-lg-flex justify-content-lg-between">
+                                                    <div
+                                                        class="card border-0 rounded-pill bg-white flex-grow-1 ml-lg-2 mb-2 mb-lg-0">
+                                                        <div class="card-body py-3 text-center">
+                                                            <p class="text-center mb-0"><span>نام :</span> <strong>رضا
+                                                                    زینالی</strong></p>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="card border-0 rounded-pill bg-white flex-grow-1 ml-lg-2 mb-2 mb-lg-0">
+                                                        <div class="card-body py-3 text-center">
+                                                            <p class="text-center mb-0"><span>نام بانک :</span>
+                                                                <strong>تجارت</strong></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-lg-flex justify-content-lg-between mt-2">
+                                                    <div
+                                                        class="card border-0 rounded-pill bg-white flex-grow-1 ml-lg-2 mb-2 mb-lg-0">
+                                                        <div class="card-body py-3 text-center">
+                                                            <p class="text-center mb-0"><span>شماره کارت :</span>
+                                                                <strong dir="ltr">6037697562701919</strong></p>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="card border-0 rounded-pill bg-white flex-grow-1 ml-lg-2 mb-2 mb-lg-0">
+                                                        <div class="card-body py-3 text-center">
+                                                            <p class="text-center mb-0"><span>api_card_id :</span>
+                                                                <strong>4545_Tej</strong></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                        class="card border-0 rounded-pill bg-white flex-grow-1 my-3">
+                                                        <div class="card-body py-3 text-center">
+                                                            <p class="text-center mb-0"><span>دکمه پرداخت :</span>
+                                                                <strong class="text-danger">sgdhgshdghjsdghsdgfiusde</strong></p>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 border-right left-card-bank">
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <p class="mb-0">فعال</p>
+                                                    <div class="custom-control custom-switch custom-switch-edit pl-4">
+                                                        <input type="checkbox" class="custom-control-input" id="custom-switch">
+                                                        <label class="custom-control-label" for="custom-switch"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <p class="mb-0">وضعیت</p>
+                                                    <p class="mb-0 text-danger">مسدود</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <p class="mb-0">حذف کارت</p>
+                                                    <span class="mb-0"><a href="#del" data-toggle="modal" class="text-muted"><i class="fas fa-angle-left align-items-center"></i></a></span>
+                                                    <div class="modal fade" id="del">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h4>حذف کارت</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- End Credit Bank Section -->
             </div>
-            <!-- End Main side -->
         </div>
+        <!-- End Main side -->
+    </div>
     </div>
 </body>
 
