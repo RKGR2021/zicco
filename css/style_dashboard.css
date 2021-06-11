@@ -211,7 +211,7 @@ h5.titr{
     transition: all 0.9s ease;
     color: rgb(207, 1, 1) !important;
 }
-.card-body p strong{
+ strong{
     font-family: 'IranYekanSB' !important;
 }
 .custom-switch-edit{
@@ -235,4 +235,7 @@ h5.titr{
 }
 .cart-bank select option{
     font-weight: bold !important;
+}
+.border-right-dotted{
+    border-right: 1px dotted #6c6b6e !important;
 }
