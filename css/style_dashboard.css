@@ -59,6 +59,33 @@
     src: url('../font/IRANYekanWebRegular.woff');
   }
 
+  /*اعداد فارسی */
+  @font-face {
+    font-family: 'IranYekanRN';
+    src: url('../font/iranyekanwebregularfanum.eot');
+    src: url('../font/iranyekanwebregularfanum.woff');
+    
+  }
+  @font-face {
+    font-family: 'IranYekanMN';
+    src: url('../font/iranyekanwebmediumfanum.eot');
+    src: url('../font/iranyekanwebmediumfanum.woff');
+    
+  }
+  @font-face {
+    font-family: 'IranYekanBN';
+    src: url('../font/iranyekanwebboldfanum.eot');
+    src: url('../font/iranyekanwebboldfanum.woff');
+    
+  }
+  @font-face {
+    font-family: 'IranYekanEBN';
+    src: url('../font/iranyekanwebextraboldfanum.eot');
+    src: url('../font/iranyekanwebextraboldfanum.woff');
+    
+  }
+
+
 
 *{
     font-family: 'IranYekan';
@@ -238,4 +265,54 @@ h5.titr{
 }
 .border-right-dotted{
     border-right: 1px dotted #6c6b6e !important;
+}
+.para-edit{
+    font-size: 16px !important;
+    line-height: 2.6 !important;
+    font-family: 'IranYekanL' !important;
+}
+.finger input{
+    border-radius: 10px !important;
+    background: #ececec !important;
+    border: none !important;
+}
+.finger input:focus{
+    z-index: 0 !important;
+    background: #f1efef !important;
+}
+.finger input:focus a{
+    z-index: 99 !important;
+}
+.finger a{
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background: #6f42c1 !important;
+    border-radius: 10px !important;
+    color: #fff !important;
+}
+p.wage small{
+    font-family: 'IranYekanL' !important;
+    font-weight: bolder !important;
+}
+p.wage strong{
+    font-family: 'IranYekanRN' !important;
+    font-weight: bolder !important;
+}
+strong{
+    font-family: 'IranYekanRN' !important;
+    font-weight: bolder !important;
+}
+small{
+    font-family: 'IranYekanL' !important;
+    font-weight: bolder !important;
+}
+.earn{
+    border-radius: 20px !important;
+}
+.earn a{
+    border: none !important;
+    background: #fbb034 !important;
+    background-image: linear-gradient(315deg, #ffdd00 0%, #fbb034 75%) !important;
+    border-radius: 15px !important;
 }
