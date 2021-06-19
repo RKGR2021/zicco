@@ -390,3 +390,53 @@ a.btn-search:hover{
 .border2 a{
     color: #6f42c1 !important;
 }
+.head{
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+    height: 40%;
+    background: #6f42c1 !important;
+    border-radius: 0 0 5em 5em;
+}
+strong.sizing3{
+    font-size: 23px !important;
+}
+.border3{
+    border-radius: 8px !important;
+}
+.customize{
+    border-top: 1px dashed #e9e9e9 !important;
+
+}
+.customize label{
+    font-size: 14px !important;
+}
+.customize input{
+    border: none !important;
+    background-color: #f2f2f2 !important;
+    font-size: 13px !important;
+    border-radius: 10px !important;
+}
+.customize input::placeholder{
+    font-size: 12px !important;
+    font-family: 'IranFamily' !important;
+}
+.customize .buttons a:nth-child(1){
+    background: #ffee00 !important;
+    background-image: linear-gradient(315deg, #ffcf00 0%,  #ffee00 95%) !important;
+    border-radius: 25px !important;
+    color: #919191 !important;
+    padding: 12.5px 0 !important;
+    transition: all 0.2s ease;
+    font-family: 'IranYekanSB' !important;
+}
+
+.customize .buttons a:nth-child(1):hover{
+    box-shadow:-1px -1px 5px #ffcf00  !important;
+}
+.customize .buttons a:nth-child(2){
+    color: #6f42c1 !important;
+}
+.customize2 p{
+    font-family: 'IranYekanR' !important;
+}
