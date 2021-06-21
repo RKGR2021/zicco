@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&family=Poppins&display=swap');
+
+body{
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+    font-family: 'Lato', sans-serif !important;
+}
+.navbar{
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.2rem !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 20px 0 !important;
+}
+.navbar .nav-item .nav-link{
+    color: #fff !important;
+    padding-left: 20px !important;
+}
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:hover{
+    color: #1ebba3 !important;
+}
+.heading{
+    color: #fff !important;
+    position: absolute !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    top: 50% !important;
+
+}
+.heading h5{
+    font-size: 4em !important;
+    font-weight: 300 !important;
+    font-family: monospace !important;
+}
+.heading h1{
+    font-size: 5em !important;
+    font-weight: bolder !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+.heading p{
+    font-size: 1em !important;
+    font-weight: lighter !important;
+    color: #ccc !important;
+    text-transform: uppercase !important;
+    word-spacing: 5px !important;
+    letter-spacing: 2px !important;
+}
+
+#about .btn{
+    border: 2px solid transparent !important;
+    width: 40% !important;
+    padding: 15px 22px !important;
+    background: #000 !important;
+    border-radius: 5px !important;
+    margin-top: 10px !important;
+    transition: all 0.5s ease !important;
+}
+
+#about .btn a{
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 1em !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+}
+
+#about .btn:hover{
+    border: 2px solid #1ebba3 !important;
+    cursor: pointer !important;
+}
+
+#service .button{
+    border: 2px solid transparent !important;
+    width: 40% !important;
+    padding: 15px 22px !important;
+    background: #000 !important;
+    border-radius: 5px !important;
+    margin-top: 10px !important;
+    transition: all 0.5s ease !important;
+}
+
+#service .button a{
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 1em !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+}
+
+#service .button:hover{
+    border: 2px solid #1ebba3 !important;
+    cursor: pointer !important;
+}
